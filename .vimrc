@@ -9,10 +9,11 @@ execute pathogen#infect()
 filetype plugin indent on
 
 syntax enable
- set t_Co=256 " 16?
+set t_Co=256
 
 " vim-airline
 set laststatus=2
+" let g:airline_theme='dark'
 
 " General
 "
@@ -27,10 +28,5 @@ set softtabstop=4 "Number of spaces in tab when editing
 set expandtab "Tabs are spaces
 
 " Theme/Colors
-"
-" Solarized theme, Install the following:
-" https://github.com/altercation/solarized/tree/master/vim-colors-solarized
-" https://github.com/Anthony25/gnome-terminal-colors-solarized
-"
- set background=dark
- colorscheme solarized
+set background=dark
+colorscheme solarized
