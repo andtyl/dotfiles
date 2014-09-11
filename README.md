@@ -31,6 +31,19 @@ Add to .zshrc:
 
 `export PATH=~/dotfiles/bin:$PATH`
 
+# Temp
+    
+## Install submodules
+
+    git submodule init
+    git submodule update
+
+## Update submodules
+
+    git submodule foreach git pull origin master
+
+
 # TODO
 
 - GIT submodules
+- https://github.com/Lokaltog/powerline

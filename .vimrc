@@ -3,6 +3,16 @@
 " https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
 " https://github.com/michaeljsmalley/dotfiles/blob/master/vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+filetype plugin indent on
+
+syntax enable
+ set t_Co=256 " 16?
+
+" vim-airline
+set laststatus=2
 
 " General
 "
@@ -22,7 +32,5 @@ set expandtab "Tabs are spaces
 " https://github.com/altercation/solarized/tree/master/vim-colors-solarized
 " https://github.com/Anthony25/gnome-terminal-colors-solarized
 "
-syntax enable
-set t_Co=16
-set background=dark
-colorscheme solarized
+ set background=dark
+ colorscheme solarized
