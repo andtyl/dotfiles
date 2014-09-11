@@ -1,49 +1,53 @@
 
-# Install
+# Installation
 
-## zsh
+## Install zsh
 
-`sudo apt-get install zsh`
+    sudo apt-get install zsh
 
-`chsh -s /bin/zsh`
+    chsh -s /bin/zsh
 
-## oh-my-zsh
-
-`git clone https://github.com/robbyrussell/oh-my-zsh.git`
-
-`cp ~/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc`
-
-## dircolors
-
-`git clone https://github.com/seebi/dircolors-solarized.git`
-
-Add to .zshrc:
-
-``eval `dircolors ~/dircolors-solarized/dircolors.256dark` ``
-
-# Config 
-
-Run:
-
-`./makesyminks.sh`
-
-Add to .zshrc:
-
-`export PATH=~/dotfiles/bin:$PATH`
-
-# Temp
-    
 ## Install submodules
 
     git submodule init
     git submodule update
 
-## Update submodules
+## Make symlinks 
+
+Run:
+
+    ./makesyminks.sh
+
+
+##Config oh-my-zsh
+
+Copy the template
+
+    cp ~/dotfiles/shell/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+
+Customize
+
+    ZSH_THEME="risto"
+
+Add this to bottom
+
+```
+# Path
+export PATH=~/dotfiles/bin:$PATH
+ 
+# Dircolors
+eval `dircolors ~/dotfiles/shell/dircolors-solarized/dircolors.256dark`
+ 
+#256 color terminal
+export TERM=xterm-256color
+```
+
+# Update
+
+To update submodules
 
     git submodule foreach git pull origin master
 
-
 # TODO
 
-- GIT submodules
 - https://github.com/Lokaltog/powerline
