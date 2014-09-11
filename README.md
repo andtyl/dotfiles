@@ -1,4 +1,8 @@
 
+About
+
+My dotfiles for a Ubuntu system, with zsh shell and solarized theme everywhere :)
+
 # Installation
 
 ## Install zsh
@@ -10,7 +14,12 @@
 ## Install submodules
 
     git submodule init
+
     git submodule update
+
+## Install gnome-terminal-colors-solarized
+
+    ./shell/gnome-terminal-colors-solarized/install.sh
 
 ## Make symlinks 
 
@@ -18,8 +27,7 @@ Run:
 
     ./makesyminks.sh
 
-
-##Config oh-my-zsh
+## Config oh-my-zsh
 
 Copy the template
 
@@ -38,7 +46,7 @@ export PATH=~/dotfiles/bin:$PATH
 # Dircolors
 eval `dircolors ~/dotfiles/shell/dircolors-solarized/dircolors.256dark`
  
-#256 color terminal
+# 256 color terminal
 export TERM=xterm-256color
 ```
 
