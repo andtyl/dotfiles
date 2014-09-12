@@ -35,6 +35,8 @@ Copy the template
 
 Customize
 
+    export ZSH=$HOME/dotfiles/shell/oh-my-zsh
+
     ZSH_THEME="risto"
 
 Add this to bottom
