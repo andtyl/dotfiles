@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
 function create_link {
     #test -L "$HOME/$2" || ln -s "$HOME/$1" "$HOME/$2"
     
@@ -19,6 +21,10 @@ function check_success {
         exit 1
     fi
 }
+
+# Enter script dir
+
+cd $DIR
 
 # GIT Submodules
 
@@ -66,4 +72,9 @@ echo "Creating symlinks..."
 create_link ".gitconfig" ".gitconfig"
 create_link ".vimrc" ".vimrc"
 create_link ".vim" ".vim"
+
+# SSH
+
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
 
