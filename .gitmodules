@@ -16,3 +16,9 @@
 [submodule "shell/oh-my-zsh"]
 	path = shell/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule ".vim/bundle/molokai"]
+	path = .vim/bundle/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "shell/gnome-terminal-colors-monokai"]
+	path = shell/gnome-terminal-colors-monokai
+	url = https://github.com/pricco/gnome-terminal-colors-monokai

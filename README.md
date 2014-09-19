@@ -1,7 +1,7 @@
 
 About
 
-My dotfiles for a Ubuntu system, with zsh shell and solarized theme everywhere :)
+My dotfiles for a Ubuntu system, with zsh shell and monokai or solarized theme
 
 # Installation
 
@@ -17,40 +17,11 @@ My dotfiles for a Ubuntu system, with zsh shell and solarized theme everywhere :
 
     git submodule update
 
-## Install gnome-terminal-colors-solarized
-
-    ./shell/gnome-terminal-colors-solarized/install.sh
-
-## Make symlinks 
+## Install 
 
 Run:
 
-    ./makesyminks.sh
-
-## Config oh-my-zsh
-
-Copy the template
-
-    cp ~/dotfiles/shell/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-
-Customize
-
-    export ZSH=$HOME/dotfiles/shell/oh-my-zsh
-
-    ZSH_THEME="risto"
-
-Add this to bottom
-
-```
-# Path
-export PATH=~/dotfiles/bin:$PATH
- 
-# Dircolors
-eval `dircolors ~/dotfiles/shell/dircolors-solarized/dircolors.256dark`
- 
-# 256 color terminal
-export TERM=xterm-256color
-```
+    ./install.sh
 
 # Update
 
@@ -60,4 +31,5 @@ To update submodules
 
 # TODO
 
+- Remove all solarized
 - https://github.com/Lokaltog/powerline

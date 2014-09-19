@@ -53,18 +53,23 @@ if [ ! -e "~/.zshrc" ]; then
     sed -i.bak -r 's/ZSH_THEME=".*?"/ZSH_THEME="risto"/' ~/.zshrc # Change theme 
     echo -e "\n# Custom" >> ~/.zshrc
     echo -e "\n# Path\nexport PATH=~/dotfiles/bin:\$PATH" >> ~/.zshrc
-    echo -e "\n# Dircolors\neval \`dircolors ~/dotfiles/shell/dircolors-solarized/dircolors.256dark\`" >> ~/.zshrc
     echo -e "\n# 256 color terminal\nexport TERM=xterm-256color" >> ~/.zshrc
-
+    #echo -e "\n# Dircolors\neval \`dircolors ~/dotfiles/shell/dircolors-solarized/dircolors.256dark\`" >> ~/.zshrc
+    
     check_success 0 "Create .zshrc"
 else
     echo  $(tput setaf 3)WARNING:$(tput sgr 0) .zshrc already exists, will not modify
 fi
 
-# gnome-terminal-colors-solarized
+# gnome terminal colors
 
-echo "Installing gnome-terminal-colors-solarized profile"
-./shell/gnome-terminal-colors-solarized/install.sh
+# gnome-terminal-colors-solarized
+#echo "Installing gnome-terminal-colors-solarized profile"
+#./shell/gnome-terminal-colors-solarized/install.sh
+
+# monokai
+echo "Installing gnome-terminal-colors-monokai profile"
+./shell/gnome-terminal-colors-monokai/install.sh
 
 # Create symlinks
 

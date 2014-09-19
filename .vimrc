@@ -13,7 +13,8 @@ set t_Co=256
 
 " vim-airline
 set laststatus=2
-" let g:airline_theme='dark'
+let g:airline_theme='dark'
+set ttimeoutlen=50
 
 " General
 "
@@ -29,4 +30,4 @@ set expandtab "Tabs are spaces
 
 " Theme/Colors
 set background=dark
-colorscheme solarized
+colorscheme molokai
