@@ -1,29 +1,15 @@
 
-About
+# About
 
 My dotfiles for a Ubuntu system, with zsh shell and monokai or solarized theme
 
-# Installation
-
-## Install zsh
-
-    sudo apt-get install zsh
-
-    chsh -s /bin/zsh
-
-## Install submodules
-
-    git submodule init
-
-    git submodule update
-
-## Install 
+# Instal
 
 Run:
 
     ./install.sh
 
-# Update
+# Update (submodules)
 
 To update submodules
 

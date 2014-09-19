@@ -8,7 +8,7 @@ function create_link {
     if [ -e "$HOME/$2" ]; then
         echo "$(tput setaf 3)WARNING:$(tput sgr 0) $2 already exists, ignored"
     else
-        ln -s "$HOME/$1" "$HOME/$2"
+        ln -s "$HOME/dotfiles/$1" "$HOME/$2"
         check_success $? "Create symlink $2"
     fi
 } 
@@ -35,7 +35,7 @@ check_success $? "Install GIT submodules"
 # zsh
 
 echo "Installing zsh, needs your password..."
-sudo apt-get install zsh
+sudo apt-get -y install zsh
 check_success $? "Install zsh"
 
 echo "Setting zsh as default shell, needs your password..."
@@ -49,7 +49,7 @@ if [ ! -e "~/.zshrc" ]; then
     cp ~/dotfiles/shell/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
     
     # Customize
-    sed -i.bak -r 's/ZSH=".*?"/ZSH="$HOME/dotfiles/shell/oh-my-zsh"/'
+    sed -i.bak -r 's/ZSH=".*?"/ZSH="$HOME/dotfiles/shell/oh-my-zsh"/' ~/.zshrc # Change oh-my-zsh location 
     sed -i.bak -r 's/ZSH_THEME=".*?"/ZSH_THEME="risto"/' ~/.zshrc # Change theme 
     echo -e "\n# Custom" >> ~/.zshrc
     echo -e "\n# Path\nexport PATH=~/dotfiles/bin:\$PATH" >> ~/.zshrc
@@ -70,6 +70,8 @@ fi
 # monokai
 echo "Installing gnome-terminal-colors-monokai profile"
 ./shell/gnome-terminal-colors-monokai/install.sh
+
+echo "$(tput setaf 3)Please set this profile as your default.$(tput sgr 0)"
 
 # Create symlinks
 
