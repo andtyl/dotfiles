@@ -3,7 +3,7 @@
 
 My dotfiles for a Ubuntu system, with zsh shell and monokai or solarized theme
 
-# Instal
+# Install
 
 Run:
 

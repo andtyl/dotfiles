@@ -34,8 +34,8 @@ check_success $? "Install GIT submodules"
 
 # zsh
 
-echo "Installing zsh, needs your password..."
-sudo apt-get -y install zsh
+echo "Installing zsh and curl, needs your password..."
+sudo apt-get -y install zsh curl
 check_success $? "Install zsh"
 
 echo "Setting zsh as default shell, needs your password..."
@@ -44,7 +44,7 @@ check_success $? "Set zsh as default shell"
 
 # Copy and customize template if not .zshrc already exists
 
-if [ ! -e "~/.zshrc" ]; then
+if [ ! -e "$HOME/.zshrc" ]; then
     # Copy template    
     cp ~/dotfiles/shell/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
     
@@ -84,4 +84,21 @@ create_link ".vim" ".vim"
 
 mkdir -p "$HOME/.ssh"
 chmod 700 "$HOME/.ssh"
+
+# Sublime Text 3
+
+if [ ! -e "$HOME/.config/sublime-text-3" ]; then
+    # Settings
+    mkdir -p "$HOME/.config/sublime-text-3/Packages"
+    ln -s "$HOME/dotfiles/st3/User" "$HOME/.config/sublime-text-3/Packages/User"   
+    echo "$(tput setaf 3)Sublime text 3 settings symlinked. Download and install Sublime text 3.$(tput sgr 0)"
+    
+    # Package Control
+    # https://sublime.wbond.net/installation
+    mkdir -p "$HOME/.config/sublime-text-3/Installed\ Packages"
+    curl -o "$HOME/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package" "https://sublime.wbond.net/Package\ Control.sublime-pack"
+    echo "$(tput setaf 3)Sublime text 3 Package Control is downloaded and will be installed on first run.$(tput sgr 0)"
+else
+    echo  $(tput setaf 3)WARNING:$(tput sgr 0) Sublime text 3 already exists, ignored
+fi
 
