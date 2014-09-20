@@ -1,0 +1,16 @@
+{
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"font_size": 9,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"show_encoding": true,
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": "false"
+}

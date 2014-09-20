@@ -1,1 +1,10 @@
 .vim/.netrwhist
+
+# st3
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+*.tmTheme
