@@ -95,8 +95,8 @@ if [ ! -e "$HOME/.config/sublime-text-3" ]; then
     
     # Package Control
     # https://sublime.wbond.net/installation
-    mkdir -p "$HOME/.config/sublime-text-3/Installed\ Packages"
-    curl -o "$HOME/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package" "https://sublime.wbond.net/Package\ Control.sublime-pack"
+    mkdir -p "$HOME/.config/sublime-text-3/Installed Packages"
+    curl -o "$HOME/.config/sublime-text-3/Installed Packages/Package Control.sublime-package" "https://sublime.wbond.net/Package%20Control.sublime-package"
     echo "$(tput setaf 3)Sublime text 3 Package Control is downloaded and will be installed on first run.$(tput sgr 0)"
 else
     echo  $(tput setaf 3)WARNING:$(tput sgr 0) Sublime text 3 already exists, ignored
