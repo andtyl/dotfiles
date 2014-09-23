@@ -49,7 +49,7 @@ if [ ! -e "$HOME/.zshrc" ]; then
     cp ~/dotfiles/shell/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
     
     # Customize
-    sed -i.bak -r 's/ZSH=".*?"/ZSH="$HOME/dotfiles/shell/oh-my-zsh"/' ~/.zshrc # Change oh-my-zsh location 
+    sed -i.bak -r 's/export ZSH=".*?"/export ZSH="$HOME/dotfiles/shell/oh-my-zsh"/' ~/.zshrc # Change oh-my-zsh location 
     sed -i.bak -r 's/ZSH_THEME=".*?"/ZSH_THEME="risto"/' ~/.zshrc # Change theme 
     echo -e "\n# Custom" >> ~/.zshrc
     echo -e "\n# Path\nexport PATH=~/dotfiles/bin:\$PATH" >> ~/.zshrc
