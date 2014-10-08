@@ -7,11 +7,13 @@
 	[
 		"Vintage"
 	],
+	"jsdocs_spacer_between_sections": "after_description",
+	"jsdocs_align_tags": false,
+	"jsdocs_short_primitives": true,
 	"show_encoding": true,
 	"soda_folder_icons": true,
 	"tab_size": 4,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"word_wrap": "false",
-	"jsdocs_spacer_between_sections": "after_description"
+	"word_wrap": "false"
 }
