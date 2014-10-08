@@ -2,7 +2,7 @@
 	"installed_packages":
 	[
 		"Base16 Color Schemes",
-		"PhpDoc",
+		"DocBlockr",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-php",
