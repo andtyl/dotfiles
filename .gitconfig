@@ -1,3 +1,5 @@
 [user]
-	name = andtyl\n
+	name = andtyl
 	email = andtyl@gmail.com
+[init]
+	templatedir = ~/.git-template

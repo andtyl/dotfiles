@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Prints a notice if composer files are changed.
+# https://github.com/greg0ire/git_template/blob/master/hooks/php/composer/post-checkout
+
+MODIFIED_FILES=`git diff --name-only $1..$2`                                                                                                             
+
+ while read -r LINE; do
+    if [[ $LINE =~ ^composer.lock$ ]]; then
+        echo -e "\e[37;41mNOTICE: composer.lock is modified. Run: composer install -o\e[0m"
+    elif [[ $LINE =~ ^composer.json$ ]]; then   
+        echo -e "\e[37;41mNOTICE: composer.json is modified. Run: composer dump-autoload -o\e[0m"
+    fi
+ done <<< "$MODIFIED_FILES"

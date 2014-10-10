@@ -77,6 +77,7 @@ echo "$(tput setaf 3)Please set this profile as your default.$(tput sgr 0)"
 
 echo "Creating symlinks..."
 create_link ".gitconfig" ".gitconfig"
+create_link ".git-template" ".git-template"
 create_link ".vimrc" ".vimrc"
 create_link ".vim" ".vim"
 
