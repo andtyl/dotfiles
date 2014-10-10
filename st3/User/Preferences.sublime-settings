@@ -7,9 +7,9 @@
 	[
 		"Vintage"
 	],
-	"jsdocs_spacer_between_sections": "after_description",
 	"jsdocs_align_tags": false,
 	"jsdocs_short_primitives": true,
+	"jsdocs_spacer_between_sections": "after_description",
 	"show_encoding": true,
 	"soda_folder_icons": true,
 	"tab_size": 4,
