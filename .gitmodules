@@ -10,9 +10,6 @@
 [submodule "shell/gnome-terminal-colors-solarized"]
 	path = shell/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized
-[submodule "shell/dircolors-solarized"]
-	path = shell/dircolors-solarized
-	url = https://github.com/seebi/dircolors-solarized
 [submodule "shell/oh-my-zsh"]
 	path = shell/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh

@@ -30,8 +30,7 @@ set tabstop=4 "Number of visual spaces per TAB
 set softtabstop=4 "Number of spaces in tab when editing
 set expandtab "Tabs are spaces
 
-" Theme/Colors
+" Theme
 set background=dark
 let g:molokai_original = 1
-let g:rehash256 = 1
 colorscheme molokai
