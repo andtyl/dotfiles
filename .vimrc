@@ -18,14 +18,12 @@ let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
 " General
-"
 set number "Line numbers
 set cul "Highlight current line
 set nowrap "Don't wrap text
 set ttimeoutlen=50
 
 " Spaces & tabs
-"
 set tabstop=4 "Number of visual spaces per TAB
 set softtabstop=4 "Number of spaces in tab when editing
 set expandtab "Tabs are spaces
@@ -34,3 +32,19 @@ set expandtab "Tabs are spaces
 set background=dark
 let g:molokai_original = 1
 colorscheme molokai
+
+" key mappings
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
+
+" mswin.vim
+" source $VIMRUNTIME/mswin.vim
+" behave mswin
+
+" gui
+if has("gui_running")
+  set lines=40
+  set columns=120
+endif
