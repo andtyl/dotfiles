@@ -3,6 +3,11 @@
 # Prints a notice if composer files are changed.
 # https://github.com/greg0ire/git_template/blob/master/hooks/php/composer/post-checkout
 
+if [ "$1" -eq 0 ]; then
+    echo -e "\e[92mThat was a git clone? No check for file mods.\e[0m"
+    exit 0;
+fi
+
 MODIFIED_FILES=`git diff --name-only $1..$2`                                                                                                             
 
  while read -r LINE; do

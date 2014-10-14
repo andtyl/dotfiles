@@ -3,3 +3,5 @@
 	email = andtyl@gmail.com
 [init]
 	templatedir = ~/.git-template
+[push]
+	default = simple
