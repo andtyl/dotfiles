@@ -18,7 +18,8 @@ let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
 " General
-set number "Line numbers
+set number "Line number
+set relativenumber "Relative line numbers
 set cul "Highlight current line
 set nowrap "Don't wrap text
 set ttimeoutlen=50
