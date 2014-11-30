@@ -11,9 +11,10 @@
 	"jsdocs_short_primitives": true,
 	"jsdocs_spacer_between_sections": "after_description",
 	"show_encoding": true,
-	"soda_folder_icons": true,
+	"soda_classic_tabs": true,
+	"soda_folder_icons": false,
 	"tab_size": 4,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Soda Light 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"word_wrap": "false"
+	"word_wrap": false
 }
