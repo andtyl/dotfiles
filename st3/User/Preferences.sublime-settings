@@ -1,16 +1,17 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/base16-default.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-tomorrow.dark (SL).tmTheme",
 	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"HTML Snippets",
-		"Vintage"
+		"Vintage",
+		"HTML Snippets"
 	],
 	"jsdocs_align_tags": false,
 	"jsdocs_short_primitives": true,
 	"jsdocs_spacer_between_sections": "after_description",
+	"phoenix_color_blue": true,
 	"show_encoding": true,
 	"soda_classic_tabs": true,
 	"soda_folder_icons": false,
