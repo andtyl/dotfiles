@@ -13,7 +13,7 @@ set t_Co=256
 
 " vim-airline
 set laststatus=2
-let g:airline_theme='light'
+let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
@@ -31,7 +31,8 @@ set softtabstop=4 "Number of spaces in tab when editing
 set expandtab "Tabs are spaces
 
 " Theme/Colors
-let g:base16_shell_path="~/dotfiles/shell/base16-shell/"
+" let g:base16_shell_path="~/dotfiles/shell/base16-shell"
+" let g:base16_shell_path="~/base16-builder/output/shell"
 let base16colorspace="256"
 set background=dark
-colorscheme base16-monokai
+colorscheme base16-bespin
