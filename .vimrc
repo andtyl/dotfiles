@@ -13,7 +13,7 @@ set t_Co=256
 
 " vim-airline
 set laststatus=2
-let g:airline_theme='dark'
+let g:airline_theme='light'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
@@ -28,11 +28,6 @@ set ttimeoutlen=50
 set tabstop=4 "Number of visual spaces per TAB
 set softtabstop=4 "Number of spaces in tab when editing
 set expandtab "Tabs are spaces
-
-" Theme
-set background=dark
-let g:molokai_original = 1
-colorscheme molokai
 
 " key mappings
 vmap <C-c> "+yi
@@ -49,3 +44,9 @@ if has("gui_running")
   set lines=40
   set columns=120
 endif
+
+" Theme/Colors
+let g:base16_shell_path="$HOME/dotfiles/shell/base16-shell"
+let base16colorspace="256"
+set background=dark
+colorscheme base16-bespin
