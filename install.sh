@@ -54,16 +54,16 @@ if [ ! -e "$HOME/.zshrc" ]; then
     echo -e "\n# Custom" >> ~/.zshrc
     echo -e "\n# Path\nexport PATH=~/dotfiles/bin:\$PATH" >> ~/.zshrc
     echo -e "\n# 256 color terminal\nexport TERM=xterm-256color" >> ~/.zshrc
-    echo -e "\n# Base16\nBASE16_SCHEME=\"monokai\"\nBASE16_SHELL=\"$HOME/base16-shell/base16-$BASE16_SCHEME.dark.sh\"\n[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL" >> ~/.zshrc
+    #echo -e "\n# Base16\nBASE16_SCHEME=\"monokai\"\nBASE16_SHELL=\"$HOME/base16-shell/base16-$BASE16_SCHEME.dark.sh\"\n[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL" >> ~/.zshrc
 
     check_success 0 "Create .zshrc"
 else
     echo  $(tput setaf 3)WARNING:$(tput sgr 0) .zshrc already exists, will not modify
 fi
 
-# theme
+# base16-gnome-terminal
 
-./shell/base16-gnome-terminal/base16-monokai.dark.sh
+./shell/base16-gnome-terminal/base16-bespin.dark.sh
 echo "$(tput setaf 3)NOTICE: Set the base16 profile as your default in Gnome Terminal.$(tput sgr 0)"
 
 # Create symlinks
