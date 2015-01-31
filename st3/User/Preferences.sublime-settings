@@ -5,13 +5,11 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"HTML Snippets"
+		"Vintage"
 	],
 	"jsdocs_align_tags": false,
 	"jsdocs_short_primitives": true,
 	"jsdocs_spacer_between_sections": "after_description",
-	"phoenix_color_blue": true,
 	"show_encoding": true,
 	"soda_classic_tabs": true,
 	"soda_folder_icons": false,
