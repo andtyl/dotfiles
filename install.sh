@@ -74,6 +74,10 @@ create_link ".git-template" ".git-template"
 create_link ".vimrc" ".vimrc"
 create_link ".vim" ".vim"
 
+# Vim
+
+mkdir -p "$HOME/.vimtmp"
+
 # SSH
 
 mkdir -p "$HOME/.ssh"

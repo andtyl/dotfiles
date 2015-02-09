@@ -24,6 +24,10 @@ set cul "Highlight current line
 set nowrap "Don't wrap text
 set ttimeoutlen=50
 
+" Backup/Swap
+set nobackup
+set dir=~/.vimtmp
+
 " Spaces & tabs
 set tabstop=4 "Number of visual spaces per TAB
 set softtabstop=4 "Number of spaces in tab when editing
