@@ -5,7 +5,9 @@
 	"installed_packages":
 	[
 		"Base16 Color Schemes",
+		"Bubububububad and Boneyfied Color Schemes",
 		"ColorPicker",
+		"Dayle Rees Color Schemes",
 		"DocBlockr",
 		"Emmet",
 		"Git",
@@ -18,6 +20,7 @@
 		"SublimeLinter",
 		"SublimeLinter-php",
 		"Theme - Soda",
+		"Theme - SoDaReloaded",
 		"Theme - Sodarized"
 	]
 }
