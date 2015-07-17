@@ -63,7 +63,7 @@ fi
 
 # base16-gnome-terminal
 
-./shell/base16-gnome-terminal/base16-bespin.dark.sh
+./shell/base16-gnome-terminal/base16-solarized.dark.sh
 echo "$(tput setaf 3)NOTICE: Set the base16 profile as your default in Gnome Terminal.$(tput sgr 0)"
 
 # Create symlinks

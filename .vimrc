@@ -53,4 +53,4 @@ endif
 let g:base16_shell_path="$HOME/dotfiles/shell/base16-shell"
 let base16colorspace="256"
 set background=dark
-colorscheme base16-flat
+colorscheme base16-solarized
