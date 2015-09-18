@@ -13,7 +13,7 @@
     "extensions_to_blacklist": [],
 
     // Execute the sniffer on file save
-    "phpcs_execute_on_save": false,
+    "phpcs_execute_on_save": true,
 
     // Show the error list after save.
     "phpcs_show_errors_on_save": true,
@@ -71,7 +71,7 @@
     //     "-n"
     // }
     "phpcs_additional_args": {
-        "--standard": "PSR2",
+        "--standard": "PSR1,PSR2",
         "-n": ""
     },
 
