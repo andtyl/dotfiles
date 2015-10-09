@@ -3,6 +3,10 @@
 " https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
 " https://github.com/michaeljsmalley/dotfiles/blob/master/vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set nocompatible 
+set backspace=indent,eol,start
+
 " Pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
@@ -13,7 +17,7 @@ set t_Co=256
 
 " vim-airline
 set laststatus=2
-let g:airline_theme='light'
+let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
@@ -50,7 +54,5 @@ if has("gui_running")
 endif
 
 " Theme/Colors
-let g:base16_shell_path="$HOME/dotfiles/shell/base16-shell"
-let base16colorspace="256"
 set background=dark
-colorscheme base16-isotope
+colorscheme base16-solarized

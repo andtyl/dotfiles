@@ -1,8 +1,4 @@
 
-# About
-
-My dotfiles for a Ubuntu system, with zsh shell and base16 themeing.
-
 # Install
 
 Run:
