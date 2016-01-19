@@ -17,7 +17,7 @@ set t_Co=256
 
 " vim-airline
 set laststatus=2
-let g:airline_theme='solarized'
+let g:airline_theme='light'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
@@ -55,4 +55,4 @@ endif
 
 " Theme/Colors
 set background=dark
-colorscheme base16-solarized
+colorscheme base16-bespin

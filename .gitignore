@@ -1,4 +1,6 @@
 .vim/.netrwhist
+*~
+.DS_Store
 
 # st3
 Package Control.last-run
