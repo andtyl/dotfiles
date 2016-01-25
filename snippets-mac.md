@@ -19,3 +19,11 @@
 
 disable: `defaults write -g NSWindowResizeTime -float 0.003`
 enable: `defaults delete -g NSWindowResizeTimes`
+
+### Set default program for file type
+
+- 1 right click your file 
+- 2 choose "Get Info"
+- 3 in the popup find the "Open with" strip (this is by default closed) and open it
+- 4 from the drop down choose the program you want to open that type of file
+- 5 click "Change all..."
