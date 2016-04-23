@@ -1,5 +1,9 @@
 
+Currently customized for Mac OS. There is a branch for Linux from when Ubuntu was my main OS.
+
 # Install
+
+Not sure if this script still works...
 
 Run:
 
@@ -11,14 +15,14 @@ To update submodules
 
     git submodule foreach git pull origin master
 
-# Sublime Text
+# Notes
 
-## PHP Code Sniffer
+## PHP Code Sniffer for Sublime Text
 
-- Tools used: https://github.com/squizlabs/PHP_CodeSniffer
-- Sublime Package used: https://github.com/benmatselby/sublime-phpcs
+**Tool used:** https://github.com/squizlabs/PHP_CodeSniffer
+**Sublime Package used:** https://github.com/benmatselby/sublime-phpcs
 
-Project specific rules:
+Setting project specific rules:
 
 Edit `x.sublime-project`:
 
@@ -43,6 +47,3 @@ Edit `x.sublime-project`:
 }
 ```
 
-# TODO
-
-- https://github.com/Lokaltog/powerline
