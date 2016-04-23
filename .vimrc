@@ -55,4 +55,4 @@ endif
 
 " Theme/Colors
 set background=dark
-colorscheme base16-bespin
+colorscheme base16-monokai
