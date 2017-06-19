@@ -17,7 +17,7 @@ set t_Co=256
 
 " vim-airline
 set laststatus=2
-let g:airline_theme='light'
+let g:airline_theme='dracula'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
@@ -53,6 +53,5 @@ if has("gui_running")
   set columns=120
 endif
 
-" Theme/Colors
 set background=dark
-colorscheme base16-monokai
+colorscheme dracula
