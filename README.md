@@ -1,4 +1,4 @@
 
-# Dotfiles
+# ⚙️ My Dotfiles
 
-My dotfiles
+My dotfiles for macOS
