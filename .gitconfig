@@ -7,3 +7,5 @@
 	prune = true
 [core]
 	editor = vim
+[gpg]
+	program = gpg
