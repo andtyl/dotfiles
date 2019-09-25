@@ -4,3 +4,7 @@ DEFAULT_USER="andy"
 plugins=(git osx vagrant)
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 source $ZSH/oh-my-zsh.sh
+
+# Aliases
+alias vc='/Applications/VeraCrypt.app/Contents/MacOS/VeraCrypt'
+alias veracrypt='/Applications/VeraCrypt.app/Contents/MacOS/VeraCrypt'
