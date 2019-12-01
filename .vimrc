@@ -12,12 +12,16 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 filetype plugin indent on
 
+" Theme
+set termguicolors
 syntax enable
 set t_Co=256
+set background=dark
+colorscheme codedark
 
 " vim-airline
 set laststatus=2
-let g:airline_theme='dracula'
+let g:airline_theme='codedark'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
@@ -53,5 +57,4 @@ if has("gui_running")
   set columns=120
 endif
 
-set background=dark
-colorscheme dracula
+
