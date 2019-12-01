@@ -1,11 +1,9 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" http://dougblack.io/words/a-good-vimrc.html#spaces
-" https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
-" https://github.com/michaeljsmalley/dotfiles/blob/master/vimrc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 set nocompatible 
 set backspace=indent,eol,start
+
+" Disable beeping
+set visualbell
+set t_vb=
 
 " Pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -47,14 +45,9 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
 
-" mswin.vim
-" source $VIMRUNTIME/mswin.vim
-" behave mswin
-
 " gui
 if has("gui_running")
   set lines=40
   set columns=120
 endif
-
 
