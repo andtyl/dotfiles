@@ -14,3 +14,6 @@ Package Control.user-ca-bundle
 oscrypto-ca-bundle.crt
 *.tmTheme
 ColorPicker
+
+# Python
+__pycache__/
