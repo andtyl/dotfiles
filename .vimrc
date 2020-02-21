@@ -5,11 +5,6 @@ set backspace=indent,eol,start
 set visualbell
 set t_vb=
 
-" Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-filetype plugin indent on
-
 " Theme
 set termguicolors
 syntax enable
