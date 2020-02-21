@@ -1,8 +1,7 @@
+# Vim
 .vim/.netrwhist
-*~
-.DS_Store
 
-# st3
+# Sublime Text 3
 Package Control.last-run
 Package Control.ca-list
 Package Control.ca-bundle
@@ -14,6 +13,3 @@ Package Control.user-ca-bundle
 oscrypto-ca-bundle.crt
 *.tmTheme
 ColorPicker
-
-# Python
-__pycache__/

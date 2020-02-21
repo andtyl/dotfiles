@@ -7,5 +7,6 @@
 	prune = true
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [gpg]
 	program = gpg
