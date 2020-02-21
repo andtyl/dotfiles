@@ -13,10 +13,8 @@ set background=dark
 colorscheme codedark
 
 " vim-airline
-set laststatus=2
 let g:airline_theme='codedark'
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
-let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
 " General
 set number "Line number
@@ -33,16 +31,4 @@ set dir=~/.vimtmp
 set tabstop=4 "Number of visual spaces per TAB
 set softtabstop=4 "Number of spaces in tab when editing
 set expandtab "Tabs are spaces
-
-" key mappings
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <C-r><C-o>+
-
-" gui
-if has("gui_running")
-  set lines=40
-  set columns=120
-endif
 
