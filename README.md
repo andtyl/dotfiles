@@ -24,5 +24,11 @@ ln -s dotfiles/.vimrc
 ln -s dotfiles/.zshrc
 ```
 
+### Create dirs
+```
+mkdir -m 700 .ssh
+mkdir .vimtmp
+```
+
 ✅ Done
 
