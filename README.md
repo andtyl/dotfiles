@@ -9,14 +9,21 @@ cd ~
 git clone https://github.com/andtyl/dotfiles
 ```
 
-### Oh My Zsh
-`curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`
+### Zsh / Oh My Zsh
+```
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ### Git Submodules
-`git submodule update --init`
+```
+cd dotfiles
+git submodule update --init
+```
 
 ### Symlinks
 ```
+cd ~
 ln -s dotfiles/.gitconfig
 ln -s dotfiles/.gitignore_global
 ln -s dotfiles/.vim
@@ -26,9 +33,10 @@ ln -s dotfiles/.zshrc
 
 ### Create dirs
 ```
-mkdir -m 700 .ssh
 mkdir .vimtmp
 ```
 
-✅ Done
+### Install terminal font
+
+vim-airline requries a font that supports symbols, for example: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
