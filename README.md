@@ -36,7 +36,14 @@ ln -s dotfiles/.zshrc
 mkdir .vimtmp
 ```
 
-### Install terminal font
+### Terminal settings
+
+#### Install terminal font
 
 vim-airline requries a font that supports symbols, for example: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+
+#### Disable beeping
+
+[Disable beep in WSL terminal on Windows 10](https://stackoverflow.com/a/36726662)
+
 
